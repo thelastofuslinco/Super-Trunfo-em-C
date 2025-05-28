@@ -11,15 +11,14 @@ int main()
     float gdp1, gdp2;
     int tourist_spots1, tourist_spots2;
 
-    printf("Digite o estado da primeira carta: ");
+    printf("Carta 1. Digite o estado da primeira carta: ");
     scanf("%c", &state1);
 
-    printf("Digite o código da carta: ");
-    scanf("%s", &code1);
-
+    printf("Carta 1. Digite o código da carta: ");
+    scanf("%4s", code1);
     getchar();
 
-    printf("Digite o nome da cidade: ");
+    printf("Carta 1. Digite o nome da cidade: ");
     fgets(name1, sizeof(name1), stdin);
     name1[strcspn(name1, "\n")] = 0;
 
@@ -34,15 +33,13 @@ int main()
 
     printf("Carta 1. Digite o número de pontos turísticos: ");
     scanf("%d", &tourist_spots1);
-
     getchar();
 
     printf("Carta 2. Digite o estado da primeira carta: ");
     scanf("%c", &state2);
 
     printf("Carta 2. Digite o código da carta: ");
-    scanf("%s", &code2);
-
+    scanf("%4s", code2);
     getchar();
 
     printf("Carta 2. Digite o nome da cidade: ");
